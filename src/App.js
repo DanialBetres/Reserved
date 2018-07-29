@@ -15,7 +15,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.showHomePage)
     return (
       <div
         className="Login-page"

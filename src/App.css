@@ -96,7 +96,21 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+
 .titleHomepage{
   font-size: 16px;
   color: white;
+}
+.store-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h3 {
+  margin: 2;
+}
+
+p {
+  margin: 2;
 }
