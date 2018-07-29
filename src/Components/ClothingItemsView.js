@@ -11,17 +11,23 @@ import ViewMultiple from "../Images/ViewMultiple";
 import hm from "../Images/hm.jpg";
 import ClothingItemsComponent from "./ClothingItemsComponent";
 import SearchJackets from './SearchJackets'
+import ShowAdd from './ShowAdd'
 
 class ClothingItemsView extends Component {
   constructor(props){
     super(props)
     this.state = {
-      showSearch: false
+      showSearch: false,
+      showAdd : false
     }
   }
 
   toggle = () => {
     this.setState ({ showSearch: !this.state.showSearch})
+  };
+
+  add =() => {
+    this.setState({ showAdd: !this.state.showAdd })
   }
 
   render(){
@@ -50,7 +56,10 @@ class ClothingItemsView extends Component {
     ];
     if(!this.state.showSearch){
       return (
-        <ClothingItemsComponent back={this.props.back} toggle={this.toggle} data={ShortsData} storeImage={hm} searchTitle={"Shorts"}/>
+        <div>
+            <ClothingItemsComponent add ={this.add} back={this.props.back} toggle={this.toggle} data={ShortsData} storeImage={hm} searchTitle={"Shorts"}/>
+            {this.state.showAdd && <ShowAdd />}
+        </div>
       );
     }
     else{

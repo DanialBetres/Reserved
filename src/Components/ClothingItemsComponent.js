@@ -3,7 +3,7 @@ import ClothingItem from "./ClothingItem";
 import Header from "./Header";
 import ViewSingle from "../Images/ViewSingle";
 import ViewMultiple from "../Images/ViewMultiple";
-const ClothingItemsComponent = ({back, toggle, searchTitle, storeImage, data}) => {
+const ClothingItemsComponent = ({add, back, toggle, searchTitle, storeImage, data}) => {
   return (
     <div style={{display:"flex",flexDirection:"column", alignItems:"flex-start"}}>
     <Header toggle={toggle} action={back}/>
@@ -30,6 +30,7 @@ const ClothingItemsComponent = ({back, toggle, searchTitle, storeImage, data}) =
         }}
       >
       {data && data.map((elem) => <ClothingItem
+            action={add}
           {...elem}
           />
       )}

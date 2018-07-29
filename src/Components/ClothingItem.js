@@ -1,9 +1,11 @@
 import React from "react";
 import Add from '../Images/Add'
-const ClothingItem = ({itemImage,name,price, storeName}) => {
+const ClothingItem = ({itemImage,name,price, storeName, action}) => {
 
   return(
-    <div style={{  
+    <div 
+        onClick={action}
+        style={{  
       display:"flex",
       flexDirection: "column",
       alignItems: "center",
@@ -16,7 +18,7 @@ const ClothingItem = ({itemImage,name,price, storeName}) => {
     </div>
     <p className="clothingName">{name}</p>
     <p className="clothingPrice">{price}</p>
-    <Add />
+    <Add styling={'AddButton'}/>
   </div>
   )
 }

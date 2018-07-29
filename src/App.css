@@ -268,3 +268,26 @@ p {
   background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    color: red;
 
 }
+
+.AddButton{
+  width:  30px;
+  height:   30px;
+  fill:   #4621AD;
+}
+
+
+.addingModal{
+width: 80vw;
+    position: absolute;
+    background-color: red;
+    height: 70vh;
+    top: 10vh;
+    left: 10vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
