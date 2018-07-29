@@ -8,12 +8,13 @@ import shorts4 from "../Images/shorts4.jpeg";
 import shorts5 from "../Images/shorts5.jpeg";
 import ViewSingle from "../Images/ViewSingle";
 import ViewMultiple from "../Images/ViewMultiple";
-
+import hm from "../Images/hm.jpg";
 const ClothingItemsView = () => {
   return (
     <div style={{display:"flex",flexDirection:"column", alignItems:"flex-start"}}>
     <Header />
-      <div style={{display:"flex", justifyContent:"space-between", width:"100vw", backgroundColor:"#E8E8E8", border: "1px solid #BABABA", borderLeft:"0px", borderRight:"0px", marginTop:"95px", alignItems:"center"}}>
+      <img src={hm} style={{width:"55px", height:"40px", marginTop:"75px", paddingLeft:"40px"}}/>
+      <div style={{display:"flex", justifyContent:"space-between", width:"100vw", backgroundColor:"#E8E8E8", border: "1px solid #BABABA", borderLeft:"0px", borderRight:"0px", alignItems:"center", marginTop:"10px"}}>
         <div style={{paddingLeft:"40px", paddingTop:"5px", paddingBottom:"5px", fontSize:"18px"}} className="textFamilyLight"> Showing:</div>
         <div style={{paddingRight:"40px", paddingTop:"5px", paddingBottom:"5px", fontSize:"16px"}} className="textFamilyLight"> 6/20</div>
       </div>

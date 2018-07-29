@@ -1,5 +1,5 @@
 import React from "react";
-import DownArrow from "../Images/DownArrow";
+import DownArrow from "../../Images/DownArrow";
 
 const StoreItem = ({ storeName, address, priceScale, nextPage }) => {
   return (
