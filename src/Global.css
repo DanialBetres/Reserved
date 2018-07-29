@@ -6,6 +6,7 @@
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	margin-bottom: 25px;
+	text-align: center;
 }
 
 .topHalf{
@@ -24,6 +25,12 @@
     justify-content: center;
     margin-top: 60px;
 }
+
+input, button, submit { 
+	border:none;
+ 	background-color: transparent;
+ 	padding: 0 !important;
+ } 
 
 .topHalfContent{
 	display: flex;
@@ -99,4 +106,55 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+.storeLogo{
+	    width: 75px;
+    margin-top: 75px;
+    margin-left: 40px;
+}
+
+.featured{
+    padding: 0 40px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: #222;
+    margin-top: 5px;
+}
+
+.sliderImage{
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    background-size: cover;
+}
+
+.adImage{
+	width: 100%;
+}
+
+.categoryContainer{
+    padding: 0 40px
+}
+
+.category{
+    padding: 15px 0;
+    font-family: 'Montserrat';
+    color: #222;
+}
+
+.productContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc
+}
+
+.phone{
+    fill: #4621AD;
+    width: 30px;
+    height: 30px;
 }

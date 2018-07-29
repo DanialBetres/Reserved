@@ -1,0 +1,69 @@
+import React, { Component} from 'react'
+import Header from '.././Header'
+import HM from '../../Images/hm.jpg'
+import DownArrow from '../../Images/DownArrow'
+import Slider from "react-slick"
+import AdOne from '../../Images/AdOne.jpg'
+import AdTwo from '../../Images/AdTwo.png'
+import AdThree from '../../Images/AdThree.jpg'
+import Phone from './Phone'
+
+class StorePage extends Component{
+	constructor(props){
+		super(props)
+		this.state = {
+			data: ['Shirts', 'Pants', 'Shorts', 'Outerwear', 'Accessories', 'Jeans', 'Sweaters', 'Cardigans', 'Coats', 'Socks', 'Hats', 'Swimwear']
+		}
+	}
+	render(){
+		return(
+			<div>
+				<Header />
+				<div>
+					<img className='storeLogo' src={HM}/>
+					<Phone styling={'phone'}/>
+				</div>
+					<h2 className='featured'>
+						Featured
+					</h2>
+					<div>
+						<Slider>
+							<div 
+								className='sliderImage'
+							>
+								<img src={AdOne} className='adImage'/>
+							</div>
+							<div
+								className='sliderImage'
+							>
+								<img src={AdTwo} className='adImage'/>
+							</div>
+							<div
+								className='sliderImage'
+							>
+								<img src={AdThree} className='adImage'/>
+							</div>
+						
+						</Slider>
+					</div>
+					<h2 className='featured' style={{marginTop: '25px'}}>
+						Products
+					</h2>
+					<div className='categoryContainer'>
+						{this.state.data.map((category) => 
+							<div className='productContainer'>
+								<p className='category' key={category}>
+									{category}
+								</p>
+								<DownArrow styling='navigationRightArrow'/>
+							</div>
+							)
+						}
+					</div>
+				</div>
+			
+		)
+	}
+}
+
+export default StorePage

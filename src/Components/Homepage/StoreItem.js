@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import DownArrow from "../Images/DownArrow";
+import DownArrow from "../../Images/DownArrow";
 
-const StoreItem = ({ storeName, address, priceScale }) => {
+const StoreItem = ({ storeName, address, priceScale, nextPage }) => {
   return (
-      <button style={{display:"flex", alignItems:"flex-start"}} onClick={() => console.log("goToStorePage")}>
+      <button style={{display:"flex", alignItems:"flex-start"}} onClick={nextPage}>
         <div className="store-item-container">
           <div className="store-item-details">
             <h3 className="store-item-name">{storeName}</h3>

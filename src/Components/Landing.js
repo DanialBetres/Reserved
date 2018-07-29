@@ -1,7 +1,6 @@
 import React, {Component } from 'react'
 import loginPage from "../../src/Images/loginPage.jpg";
 import MainTitle from "./MainTitle";
-import StoreItem from "./StoreItem";
 import DownArrow from '../Images/DownArrow';
 class Landing extends Component{
 	render(){
