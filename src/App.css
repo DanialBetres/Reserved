@@ -87,17 +87,22 @@
 
 
 .headerComp{
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 60px;
-  background-color: white;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  z-index: 2;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: white;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 2;
+    padding: 0 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .headerCompTitle{
