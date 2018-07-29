@@ -1,6 +1,7 @@
 import React from "react";
 
 const ClothingItem = ({itemImage,name,price, storeName}) => {
+
   return(
     <div style={{  
       display:"flex",

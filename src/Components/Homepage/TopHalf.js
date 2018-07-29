@@ -3,6 +3,7 @@ import Title from './Title'
 import CircleSvg from './CircleSvg'
 import SubText from './Subtext'
 import Slider from "react-slick";
+import Card from '../Card/Card'
 
 class TopHalf extends Component{
 	constructor(props){
@@ -20,22 +21,21 @@ class TopHalf extends Component{
 	      infinite: true,
 	      speed: 500,
 	      slidesToShow: 1,
-	      slidesToScroll: 1
+	      slidesToScroll: 1,
+	      arrows: false
 	    };
         return(
-    	<div className='topHalf'> 
+    
     		<Slider {...settings}>
-	          	<div className='sliderHome'>
-	                <Title/>
-	                <CircleSvg />
-	        		<SubText />
-	        	</div>
-	        	<div>
-	        	test
-	        	</div>
+		          	<div className='topHalf sliderHome'>
+		                <Title/>
+		                <CircleSvg />
+		        		<SubText />
+		        	</div>
+		        	<div>
+		        		<Card/>
+		        	</div>
 	        </Slider>
-
-	      </div>
 
         )
     }
