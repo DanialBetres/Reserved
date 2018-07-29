@@ -1,7 +1,6 @@
 import React from "react";
 
 const ClothingItem = ({itemImage,name,price}) => {
-console.log(itemImage)
   return(
   <div className="clothingItemContainer">
     <div className="clothingImage" style={{ backgroundImage: `url(${itemImage})` }}
