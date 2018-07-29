@@ -248,6 +248,11 @@ p {
   font-weight: 300;
 }
 
+.purpleColor {
+  fill: #4621AD
+
+}
+
 .slick-next, .slick-prev{
     display: block;
     

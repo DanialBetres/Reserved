@@ -16,8 +16,8 @@ const ClothingItemsComponent = ({back, toggle, searchTitle, storeImage, data}) =
       <div style={{display:"flex", justifyContent:"space-between", alignItems: "center",width:"100vw",paddingTop:"25px", paddingBottom:"25px"}}>
         <div style={{paddingLeft:"40px", paddingTop:"5px", paddingBottom:"5px", color: "#4621AD"}} className="textFamilyRegular"> Filters</div>
         <div style={{paddingRight: "40px"}}>
-          <ViewSingle />
-          <ViewMultiple />
+          <ViewSingle styling={"purpleColor"}/>
+          <ViewMultiple styling={"purpleColor"}/>
         </div>
       </div>
       <h3 className="SearchTitle"> {searchTitle} </h3>
