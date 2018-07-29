@@ -32,6 +32,9 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin-bottom: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -159,4 +162,14 @@ h3 {
 
 p {
   margin: 2px;
+}
+
+.navigationRightArrow {
+  transform: rotate(-90deg);
+  fill: #4621AD
+}
+
+.navigationRightArrow-loginPage {
+  transform: rotate(-90deg);
+  fill: white;
 }
