@@ -1,9 +1,10 @@
 import React from 'react'
 
-const SearchModal = ({ submit, toggle }) => {
+const SearchModal = ({ submit, toggle,resultToggle }) => {
 	const submitHandler = (e) => {
 		e.preventDefault()
-		toggle()
+		toggle(e.target.value)
+		resultToggle()
 	}
 	return(
 		<div className='searchContainer' >
