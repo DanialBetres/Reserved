@@ -296,3 +296,12 @@ width: 80vw;
      -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
+.storeButton{
+  transition: ease-out 0.5s;
+  transform: translate3d(-100px, 0, 0);
+}
+
+.animateInto{
+  transform: translate3d(0,0,0);
+}

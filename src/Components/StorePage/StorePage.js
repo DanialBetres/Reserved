@@ -30,7 +30,7 @@ class StorePage extends Component{
 					<Header action={this.props.toggle}/>
 					<div style={{position: 'relative'}}>
 						<img className='storeLogo' src={HM}/>
-						<Phone styling={'phone'}/>
+						<Phone styling={'phone'}/>``
 						<Email styling ={'email'} />
 					</div>
 						<h2 className='featured'>
@@ -75,7 +75,7 @@ class StorePage extends Component{
 						</h2>
 						<div className='categoryContainer' onClick={this.toggle}>
 							{this.state.data.map((category) => 
-								<div className='productContainer' >
+								<div className='productContainer'>
 									<p className='category' key={category}>
 										{category}
 									</p>
