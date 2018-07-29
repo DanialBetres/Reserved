@@ -3,6 +3,7 @@ import Header from '.././Header'
 import TopHalf from './TopHalf'
 import StoreItem from './StoreItem'
 import StorePage from '../StorePage/StorePage'
+import DropDown from '../../Images/DownArrow'
 class HomePage extends Component{
 	constructor(props){
 		super(props)
@@ -50,13 +51,25 @@ class HomePage extends Component{
 	            <div>
 	                <Header />
 	                <TopHalf />
+                	<h2 className='featured' style={{marginTop: '20px', marginBottom: '5px'}}>
+						<span style ={{
+							fontSize: '16px',
+    						fontWeight: 300,
+    						marginRight: '5px'
+						}}> Showing:</span> <span 
+						style ={{
+							color: '#4621AD'
+						}}>
+						Stores</span>
+						<DropDown styling={'downStore'}/>
+					</h2>
 	                {this.state.data.map((store) => <StoreItem key={store.storeName} nextPage={this.nextPage} {...store} />)}
 	            </div>
 	        )   		
     	}
     	else{
     		return (
-    			<StorePage />
+    			<StorePage toggle={this.nextPage}/>
     		)
     	}
 

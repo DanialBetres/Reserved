@@ -7,6 +7,7 @@ import AdOne from '../../Images/AdOne.jpg'
 import AdTwo from '../../Images/AdTwo.png'
 import AdThree from '../../Images/AdThree.jpg'
 import Phone from './Phone'
+import Email from '../../Images/Email'
 
 class StorePage extends Component{
 	constructor(props){
@@ -18,10 +19,11 @@ class StorePage extends Component{
 	render(){
 		return(
 			<div>
-				<Header />
-				<div>
+				<Header action={this.props.toggle}/>
+				<div style={{position: 'relative'}}>
 					<img className='storeLogo' src={HM}/>
 					<Phone styling={'phone'}/>
+					<Email styling ={'email'} />
 				</div>
 					<h2 className='featured'>
 						Featured
@@ -47,7 +49,21 @@ class StorePage extends Component{
 						</Slider>
 					</div>
 					<h2 className='featured' style={{marginTop: '25px'}}>
-						Products
+						Women
+					</h2>
+					<div className='categoryContainer'>
+						{this.state.data.map((category) => 
+							<div className='productContainer'>
+								<p className='category' key={category}>
+									{category}
+								</p>
+								<DownArrow styling='navigationRightArrow'/>
+							</div>
+							)
+						}
+					</div>
+					<h2 className='featured' style={{marginTop: '25px'}}>
+						Men
 					</h2>
 					<div className='categoryContainer'>
 						{this.state.data.map((category) => 

@@ -25,10 +25,13 @@ class TopHalf extends Component{
         return(
     	<div className='topHalf'> 
     		<Slider {...settings}>
-	          	<div>
+	          	<div className='sliderHome'>
 	                <Title/>
 	                <CircleSvg />
 	        		<SubText />
+	        	</div>
+	        	<div>
+	        	test
 	        	</div>
 	        </Slider>
 

@@ -1,8 +1,9 @@
 import React from 'react'
 
-const DownArrow = ({ styling }) => {	
+const DownArrow = ({ styling, action }) => {	
 	return(
 		<svg x="0px" y="0px"
+			onClick={action ? action : null}
 			className={ styling ? styling : null}
 			 width="24px" height="24px" viewBox="0 0 24 24" enableBackground="new 0 0 24 24">
 			}
