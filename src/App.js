@@ -5,7 +5,7 @@ import './Global.css'
 
 import HomePage from "./Components/Homepage/Homepage";
 import Landing from './Components/Landing'
-import ClothingItemsView from "./Components/ClothingItemsView";
+
 
 
 class App extends Component {
@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div>
         {!this.state.showHomePage && <Landing toggle={this.toggleShowHomePage}/>}
-        {this.state.showHomePage && <ClothingItemsView />}
+        {this.state.showHomePage && <HomePage />}
       </div>
       
     );
