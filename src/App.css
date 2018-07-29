@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
 
 .Login-page {
   text-align: center;
@@ -101,16 +101,57 @@
   font-size: 16px;
   color: white;
 }
+
 .store-item-details {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align: left;
+  border-left:4px solid #4621AD;
 }
 
+.store-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.store-item-name {
+  font-size:20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.store-item-address {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-left: 10px;  
+}
+
+.store-item-price-scale {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display:flex;
+  margin-left: 10px;
+}
+
+.store-item-chevron {
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+
 h3 {
-  margin: 2;
+  margin: 2px;
 }
 
 p {
-  margin: 2;
+  margin: 2px;
 }
