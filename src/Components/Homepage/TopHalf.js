@@ -3,10 +3,20 @@ import Title from './Title'
 
 
 class TopHalf extends Component{
+	constructor(props){
+		super(props)
+		this.state ={
+			mounted: false
+		}
+	}
+	componentDidMount(){
+		console.log('ran')
+		this.setState({ mounted: true })
+	}
     render(){
         return(
             <div>
-                <Title/>
+                {this.state.mounted && <Title/>}
             </div>
         )
     }
