@@ -22,7 +22,10 @@ class App extends Component {
         style={{ backgroundImage: `url(${loginPage})` }}
       >
         <div className="Login-page-colour login-page-container">
+        
+        <div className = "login-page-title">
           <MainTitle title={"Reserved"} subTitle={"skip the line"} />
+        </div>
 
           <button onClick={() => this.setState({showHomePage: true})} className="browse-yorkdale">Browse Yorkdale ></button>
           {this.state.showHomePage && <HomePage />}
