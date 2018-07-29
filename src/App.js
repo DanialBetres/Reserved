@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-
+import './Global.css'
 
 import HomePage from "./Components/Homepage/Homepage";
 import Landing from './Components/Landing'

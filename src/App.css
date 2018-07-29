@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
 
 .Login-page {
   text-align: center;
@@ -91,16 +91,21 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 50px;
+  height: 60px;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  z-index: 2;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.headerCompTitle{
+      display: flex;
+    align-items: center;
 }
 
 
-.titleHomepage{
-  font-size: 16px;
-  color: white;
-}
 
 .store-item-details {
   display: flex;
