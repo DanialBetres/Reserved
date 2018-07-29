@@ -90,7 +90,7 @@ class StorePage extends Component{
 		}
 		else{
 			return (
-				<ClothingItemsView />
+				<ClothingItemsView back={this.toggle}/>
 			)
 		}
 	}

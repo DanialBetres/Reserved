@@ -3,10 +3,10 @@ import ClothingItem from "./ClothingItem";
 import Header from "./Header";
 import ViewSingle from "../Images/ViewSingle";
 import ViewMultiple from "../Images/ViewMultiple";
-const ClothingItemsComponent = ({toggle, searchTitle, storeImage, data}) => {
+const ClothingItemsComponent = ({back, toggle, searchTitle, storeImage, data}) => {
   return (
     <div style={{display:"flex",flexDirection:"column", alignItems:"flex-start"}}>
-    <Header toggle={toggle}/>
+    <Header toggle={toggle} action={back}/>
   {storeImage && <img src={storeImage} style={{width:"55px", height:"40px", marginTop:"75px", paddingLeft:"40px"}}/> }
       <div style={{display:"flex", justifyContent:"space-between", width:"100vw", backgroundColor:"#E8E8E8", border: "1px solid #BABABA", borderLeft:"0px", borderRight:"0px", alignItems:"center", marginTop:storeImage ? "10px" : "95px"}}>
         <div style={{paddingLeft:"40px", paddingTop:"5px", paddingBottom:"5px", fontSize:"18px"}} className="textFamilyLight"> Showing:</div>

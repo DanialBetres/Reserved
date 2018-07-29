@@ -50,12 +50,12 @@ class ClothingItemsView extends Component {
     ];
     if(!this.state.showSearch){
       return (
-        <ClothingItemsComponent toggle={this.toggle} data={ShortsData} storeImage={hm} searchTitle={"Shorts"}/>
+        <ClothingItemsComponent back={this.props.back} toggle={this.toggle} data={ShortsData} storeImage={hm} searchTitle={"Shorts"}/>
       );
     }
     else{
       return (
-        <SearchJackets />
+        <SearchJackets back={this.props.back}/>
       )
     }
 

@@ -7,7 +7,7 @@ import jeanJacket2 from "../Images/jeanJacket2.jpeg";
 import leatherJacket from "../Images/leatherJacket.jpeg";
 import ClothingItemsComponent from "./ClothingItemsComponent";
 
-const SearchJackets = ({ searchTitle }) => {
+const SearchJackets = ({ searchTitle, back }) => {
   const JacketsData = [
     {
       itemImage: blackJacket,
@@ -50,6 +50,7 @@ const SearchJackets = ({ searchTitle }) => {
     <ClothingItemsComponent
       data={JacketsData}
       searchTitle={"Jackets"}
+      back={back}
     />
   );
 };

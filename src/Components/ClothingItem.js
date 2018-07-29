@@ -1,5 +1,5 @@
 import React from "react";
-
+import Add from '../Images/Add'
 const ClothingItem = ({itemImage,name,price, storeName}) => {
 
   return(
@@ -10,6 +10,7 @@ const ClothingItem = ({itemImage,name,price, storeName}) => {
     </div>
     <p className="clothingName">{name}</p>
     <p className="clothingPrice">{price}</p>
+    <Add />
   </div>
   )
 }
