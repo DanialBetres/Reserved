@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import DownArrow from "../../Images/DownArrow";
 
 const StoreItem = ({ storeName, address, priceScale, nextPage }) => {
@@ -15,8 +15,7 @@ const StoreItem = ({ storeName, address, priceScale, nextPage }) => {
             </p>
           </div>
           <div className="store-item-chevron">
-          <DownArrow styling={'navigationRightArrow'}/>
-
+            <DownArrow styling={'navigationRightArrow'}/>
           </div>
         </div>
       </button>
