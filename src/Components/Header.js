@@ -11,7 +11,7 @@ class Header extends Component{
         }
     }
 
-    toggleSearch = () => {
+    toggleSearch = (value =null) => {
         this.setState({ showSearch: !this.state.showSearch })
     }
     render(){
@@ -26,7 +26,7 @@ class Header extends Component{
 	                <DownArrow styling={'navigationDownArrow'}/>
                 </div>
                 <Search styling={'searchIcon'} action={this.toggleSearch}/>
-                { this.state.showSearch && <SearchModal toggle={this.toggleSearch}/>}
+                { this.state.showSearch && <SearchModal resultToggle={this.props.toggle} toggle={this.toggleSearch}/>}
             </div>
         )
     }
