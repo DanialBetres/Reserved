@@ -12,7 +12,7 @@ class Card extends Component{
 					    <path d="M3 12c0-2.61 1.67-4.83 4-5.65V4.26C3.55 5.15 1 8.27 1 12s2.55 6.85 6 7.74v-2.09c-2.33-.82-4-3.04-4-5.65z"/>
 					</svg>
 						<div style={{display: 'flex', flexDirection: 'column'}}>
-							<p className='cardTitle'>Reserve Card</p>
+							<p className='cardTitle'>Reserved Card</p>
 							<p className='cardSub'> Elite Status </p>
 						</div>
 					</div>
